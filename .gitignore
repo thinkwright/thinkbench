@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.DS_Store
+
+# raw per-run output from runner (regenerable)
+results/runs/
+dataset/

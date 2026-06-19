@@ -1,0 +1,29 @@
+{
+  "models": [
+    {
+      "name": "minimax-m3",
+      "provider": "fireworks",
+      "base_url": "https://api.fireworks.ai/inference/v1",
+      "model": "accounts/fireworks/models/minimax-m3",
+      "api_key_env": "FIREWORKS_API_KEY",
+      "input_usd_per_mtok": 0.45,
+      "cached_input_usd_per_mtok": 0.09,
+      "output_usd_per_mtok": 1.80,
+      "role": "coding",
+      "service_tier": "priority",
+      "reasoning_effort": "none"
+    },
+    {
+      "name": "glm-5.2",
+      "provider": "fireworks",
+      "base_url": "https://api.fireworks.ai/inference/v1",
+      "model": "accounts/fireworks/models/glm-5p2",
+      "api_key_env": "FIREWORKS_API_KEY",
+      "input_usd_per_mtok": 2.10,
+      "cached_input_usd_per_mtok": 0.39,
+      "output_usd_per_mtok": 6.60,
+      "role": "coding",
+      "service_tier": "priority"
+    }
+  ]
+}

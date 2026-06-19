@@ -1,0 +1,1924 @@
+{
+  "run_ids": [
+    1781795685,
+    1781827589,
+    1781827591,
+    1781827593,
+    1781827595,
+    1781827597,
+    1781827599,
+    1781833247
+  ],
+  "models": [
+    "glm-5.2",
+    "minimax-m3"
+  ],
+  "trials": 3,
+  "num_graded_tasks": 60,
+  "num_observed_tasks": 12,
+  "num_runs": 432,
+  "effort_mode": "none",
+  "config": {
+    "provider": "Fireworks AI",
+    "endpoint": "https://api.fireworks.ai/inference/v1",
+    "serving_tier": "priority",
+    "thinking_mode": "none",
+    "trials": 3,
+    "models": {
+      "minimax-m3": {
+        "model_id": "accounts/fireworks/models/minimax-m3",
+        "service_tier": "priority",
+        "input_usd_per_mtok": 0.45,
+        "cached_input_usd_per_mtok": 0.09,
+        "output_usd_per_mtok": 1.8
+      },
+      "glm-5.2": {
+        "model_id": "accounts/fireworks/models/glm-5p2",
+        "service_tier": "priority",
+        "input_usd_per_mtok": 2.1,
+        "cached_input_usd_per_mtok": 0.39,
+        "output_usd_per_mtok": 6.6
+      }
+    }
+  },
+  "overall_graded": {
+    "glm-5.2": {
+      "n": 180,
+      "solved": 165,
+      "solve_rate": 0.9167,
+      "mean_score": 0.9756,
+      "avg_secs": 79.6,
+      "avg_tokens": 82443,
+      "cached_frac": 0.7306,
+      "total_cost_usd": 18.4703
+    },
+    "minimax-m3": {
+      "n": 180,
+      "solved": 152,
+      "solve_rate": 0.8444,
+      "mean_score": 0.9606,
+      "avg_secs": 45.0,
+      "avg_tokens": 135060,
+      "cached_frac": 0.7336,
+      "total_cost_usd": 6.6684
+    }
+  },
+  "by_type": {
+    "implement": {
+      "glm-5.2": {
+        "n": 45,
+        "solved": 30,
+        "solve_rate": 0.6667,
+        "mean_score": 0.9023,
+        "avg_secs": 153.6,
+        "avg_tokens": 157225,
+        "cached_frac": 0.749,
+        "total_cost_usd": 8.8404
+      },
+      "minimax-m3": {
+        "n": 45,
+        "solved": 18,
+        "solve_rate": 0.4,
+        "mean_score": 0.8437,
+        "avg_secs": 79.7,
+        "avg_tokens": 241489,
+        "cached_frac": 0.7134,
+        "total_cost_usd": 3.1395
+      }
+    },
+    "bug-fix": {
+      "glm-5.2": {
+        "n": 45,
+        "solved": 45,
+        "solve_rate": 1.0,
+        "mean_score": 1.0,
+        "avg_secs": 53.2,
+        "avg_tokens": 48150,
+        "cached_frac": 0.7314,
+        "total_cost_usd": 2.7019
+      },
+      "minimax-m3": {
+        "n": 45,
+        "solved": 44,
+        "solve_rate": 0.9778,
+        "mean_score": 0.9986,
+        "avg_secs": 29.4,
+        "avg_tokens": 68619,
+        "cached_frac": 0.7489,
+        "total_cost_usd": 0.8594
+      }
+    },
+    "feature-add": {
+      "glm-5.2": {
+        "n": 45,
+        "solved": 45,
+        "solve_rate": 1.0,
+        "mean_score": 1.0,
+        "avg_secs": 87.6,
+        "avg_tokens": 97762,
+        "cached_frac": 0.7518,
+        "total_cost_usd": 5.1815
+      },
+      "minimax-m3": {
+        "n": 45,
+        "solved": 45,
+        "solve_rate": 1.0,
+        "mean_score": 1.0,
+        "avg_secs": 53.7,
+        "avg_tokens": 186860,
+        "cached_frac": 0.7846,
+        "total_cost_usd": 2.0855
+      }
+    },
+    "repair-to-green": {
+      "glm-5.2": {
+        "n": 45,
+        "solved": 45,
+        "solve_rate": 1.0,
+        "mean_score": 1.0,
+        "avg_secs": 24.2,
+        "avg_tokens": 26635,
+        "cached_frac": 0.5466,
+        "total_cost_usd": 1.7465
+      },
+      "minimax-m3": {
+        "n": 45,
+        "solved": 45,
+        "solve_rate": 1.0,
+        "mean_score": 1.0,
+        "avg_secs": 17.2,
+        "avg_tokens": 43270,
+        "cached_frac": 0.6024,
+        "total_cost_usd": 0.584
+      }
+    }
+  },
+  "by_task": {
+    "backoff": {
+      "type": "bug-fix",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 26.0,
+          "avg_tokens": 25640,
+          "cached_frac": 0.7017,
+          "total_cost_usd": 0.098
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 16.9,
+          "avg_tokens": 34202,
+          "cached_frac": 0.7345,
+          "total_cost_usd": 0.0308
+        }
+      }
+    },
+    "base62": {
+      "type": "bug-fix",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 49.0,
+          "avg_tokens": 33641,
+          "cached_frac": 0.7507,
+          "total_cost_usd": 0.1246
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 24.4,
+          "avg_tokens": 47591,
+          "cached_frac": 0.7558,
+          "total_cost_usd": 0.0378
+        }
+      }
+    },
+    "budgetrules": {
+      "type": "implement",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 92.1,
+          "avg_tokens": 51850,
+          "cached_frac": 0.5654,
+          "total_cost_usd": 0.2958
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 1,
+          "solve_rate": 0.3333,
+          "mean_score": 0.9608,
+          "avg_secs": 77.4,
+          "avg_tokens": 138020,
+          "cached_frac": 0.6497,
+          "total_cost_usd": 0.1362
+        }
+      }
+    },
+    "cachelab": {
+      "type": "implement",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 2,
+          "solve_rate": 0.6667,
+          "mean_score": 0.9667,
+          "avg_secs": 143.3,
+          "avg_tokens": 74318,
+          "cached_frac": 0.6547,
+          "total_cost_usd": 0.347
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 1,
+          "solve_rate": 0.3333,
+          "mean_score": 0.9,
+          "avg_secs": 96.1,
+          "avg_tokens": 190206,
+          "cached_frac": 0.6996,
+          "total_cost_usd": 0.174
+        }
+      }
+    },
+    "cachetags": {
+      "type": "feature-add",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 82.3,
+          "avg_tokens": 73544,
+          "cached_frac": 0.6593,
+          "total_cost_usd": 0.3102
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 56.8,
+          "avg_tokens": 135651,
+          "cached_frac": 0.6379,
+          "total_cost_usd": 0.1311
+        }
+      }
+    },
+    "calceval": {
+      "type": "repair-to-green",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 37.9,
+          "avg_tokens": 33499,
+          "cached_frac": 0.4963,
+          "total_cost_usd": 0.1696
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 32.2,
+          "avg_tokens": 59204,
+          "cached_frac": 0.536,
+          "total_cost_usd": 0.0674
+        }
+      }
+    },
+    "cellsim": {
+      "type": "implement",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 2,
+          "solve_rate": 0.6667,
+          "mean_score": 0.9722,
+          "avg_secs": 253.6,
+          "avg_tokens": 176364,
+          "cached_frac": 0.7428,
+          "total_cost_usd": 0.6741
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 1,
+          "solve_rate": 0.3333,
+          "mean_score": 0.9722,
+          "avg_secs": 117.2,
+          "avg_tokens": 340509,
+          "cached_frac": 0.7113,
+          "total_cost_usd": 0.2848
+        }
+      }
+    },
+    "condschema": {
+      "type": "feature-add",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 118.0,
+          "avg_tokens": 112129,
+          "cached_frac": 0.6497,
+          "total_cost_usd": 0.48
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 77.0,
+          "avg_tokens": 318019,
+          "cached_frac": 0.8418,
+          "total_cost_usd": 0.2142
+        }
+      }
+    },
+    "confstack": {
+      "type": "implement",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 130.7,
+          "avg_tokens": 95186,
+          "cached_frac": 0.7459,
+          "total_cost_usd": 0.3749
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 2,
+          "solve_rate": 0.6667,
+          "mean_score": 0.9667,
+          "avg_secs": 32.1,
+          "avg_tokens": 43371,
+          "cached_frac": 0.4092,
+          "total_cost_usd": 0.0693
+        }
+      }
+    },
+    "cronmatch": {
+      "type": "repair-to-green",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 30.0,
+          "avg_tokens": 35194,
+          "cached_frac": 0.4532,
+          "total_cost_usd": 0.1667
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 18.7,
+          "avg_tokens": 58826,
+          "cached_frac": 0.5372,
+          "total_cost_usd": 0.0546
+        }
+      }
+    },
+    "cronsim": {
+      "type": "implement",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 0,
+          "solve_rate": 0.0,
+          "mean_score": 0.8571,
+          "avg_secs": 188.2,
+          "avg_tokens": 324087,
+          "cached_frac": 0.8187,
+          "total_cost_usd": 0.9303
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 1,
+          "solve_rate": 0.3333,
+          "mean_score": 0.9047,
+          "avg_secs": 130.5,
+          "avg_tokens": 625078,
+          "cached_frac": 0.7584,
+          "total_cost_usd": 0.464
+        }
+      }
+    },
+    "csvgroupby": {
+      "type": "feature-add",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 109.2,
+          "avg_tokens": 151831,
+          "cached_frac": 0.8025,
+          "total_cost_usd": 0.4727
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 34.3,
+          "avg_tokens": 87219,
+          "cached_frac": 0.7707,
+          "total_cost_usd": 0.0684
+        }
+      }
+    },
+    "csvparse": {
+      "type": "bug-fix",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 35.2,
+          "avg_tokens": 24295,
+          "cached_frac": 0.7961,
+          "total_cost_usd": 0.0935
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 13.9,
+          "avg_tokens": 26423,
+          "cached_frac": 0.7609,
+          "total_cost_usd": 0.0258
+        }
+      }
+    },
+    "csvql": {
+      "type": "implement",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 229.2,
+          "avg_tokens": 417992,
+          "cached_frac": 0.7923,
+          "total_cost_usd": 1.2514
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 1,
+          "solve_rate": 0.3333,
+          "mean_score": 0.9474,
+          "avg_secs": 73.7,
+          "avg_tokens": 154181,
+          "cached_frac": 0.5831,
+          "total_cost_usd": 0.1743
+        }
+      }
+    },
+    "cursorpage": {
+      "type": "feature-add",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 79.4,
+          "avg_tokens": 81100,
+          "cached_frac": 0.7558,
+          "total_cost_usd": 0.2903
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 50.8,
+          "avg_tokens": 88472,
+          "cached_frac": 0.8602,
+          "total_cost_usd": 0.0645
+        }
+      }
+    },
+    "datespan": {
+      "type": "repair-to-green",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 16.3,
+          "avg_tokens": 24762,
+          "cached_frac": 0.4406,
+          "total_cost_usd": 0.1147
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 13.5,
+          "avg_tokens": 31792,
+          "cached_frac": 0.6095,
+          "total_cost_usd": 0.0277
+        }
+      }
+    },
+    "decimalfmt": {
+      "type": "repair-to-green",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 20.9,
+          "avg_tokens": 25125,
+          "cached_frac": 0.4041,
+          "total_cost_usd": 0.1267
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 16.7,
+          "avg_tokens": 44770,
+          "cached_frac": 0.52,
+          "total_cost_usd": 0.0431
+        }
+      }
+    },
+    "deepget": {
+      "type": "bug-fix",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 90.2,
+          "avg_tokens": 83029,
+          "cached_frac": 0.7336,
+          "total_cost_usd": 0.3065
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 81.9,
+          "avg_tokens": 234912,
+          "cached_frac": 0.739,
+          "total_cost_usd": 0.1861
+        }
+      }
+    },
+    "eventbus": {
+      "type": "feature-add",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 72.1,
+          "avg_tokens": 57121,
+          "cached_frac": 0.6132,
+          "total_cost_usd": 0.2542
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 28.2,
+          "avg_tokens": 65237,
+          "cached_frac": 0.746,
+          "total_cost_usd": 0.0614
+        }
+      }
+    },
+    "flagwise": {
+      "type": "implement",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 80.1,
+          "avg_tokens": 52933,
+          "cached_frac": 0.6005,
+          "total_cost_usd": 0.2787
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 0,
+          "solve_rate": 0.0,
+          "mean_score": 0.9474,
+          "avg_secs": 55.3,
+          "avg_tokens": 86343,
+          "cached_frac": 0.4971,
+          "total_cost_usd": 0.1205
+        }
+      }
+    },
+    "graphbip": {
+      "type": "repair-to-green",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 18.9,
+          "avg_tokens": 22839,
+          "cached_frac": 0.4954,
+          "total_cost_usd": 0.1007
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 19.7,
+          "avg_tokens": 38873,
+          "cached_frac": 0.5982,
+          "total_cost_usd": 0.0332
+        }
+      }
+    },
+    "graphpath": {
+      "type": "bug-fix",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 73.1,
+          "avg_tokens": 58808,
+          "cached_frac": 0.7183,
+          "total_cost_usd": 0.2185
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 19.0,
+          "avg_tokens": 32498,
+          "cached_frac": 0.785,
+          "total_cost_usd": 0.028
+        }
+      }
+    },
+    "hsm": {
+      "type": "feature-add",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 104.9,
+          "avg_tokens": 110378,
+          "cached_frac": 0.6733,
+          "total_cost_usd": 0.444
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 67.7,
+          "avg_tokens": 165310,
+          "cached_frac": 0.6559,
+          "total_cost_usd": 0.1628
+        }
+      }
+    },
+    "intervalmerge": {
+      "type": "bug-fix",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 65.1,
+          "avg_tokens": 63849,
+          "cached_frac": 0.6498,
+          "total_cost_usd": 0.2665
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 27.0,
+          "avg_tokens": 46295,
+          "cached_frac": 0.7177,
+          "total_cost_usd": 0.0456
+        }
+      }
+    },
+    "jsonquery": {
+      "type": "repair-to-green",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 24.7,
+          "avg_tokens": 28792,
+          "cached_frac": 0.3669,
+          "total_cost_usd": 0.1555
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 17.1,
+          "avg_tokens": 57014,
+          "cached_frac": 0.6696,
+          "total_cost_usd": 0.046
+        }
+      }
+    },
+    "kvtxn": {
+      "type": "feature-add",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 61.1,
+          "avg_tokens": 50726,
+          "cached_frac": 0.6918,
+          "total_cost_usd": 0.2155
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 41.8,
+          "avg_tokens": 76447,
+          "cached_frac": 0.6989,
+          "total_cost_usd": 0.0794
+        }
+      }
+    },
+    "ledgercore": {
+      "type": "implement",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 1,
+          "solve_rate": 0.3333,
+          "mean_score": 0.6364,
+          "avg_secs": 149.7,
+          "avg_tokens": 133099,
+          "cached_frac": 0.6674,
+          "total_cost_usd": 0.6035
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 2,
+          "solve_rate": 0.6667,
+          "mean_score": 0.6667,
+          "avg_secs": 74.5,
+          "avg_tokens": 160279,
+          "cached_frac": 0.5685,
+          "total_cost_usd": 0.1858
+        }
+      }
+    },
+    "ledgerfix": {
+      "type": "bug-fix",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 55.0,
+          "avg_tokens": 41872,
+          "cached_frac": 0.8158,
+          "total_cost_usd": 0.1414
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 30.0,
+          "avg_tokens": 30410,
+          "cached_frac": 0.7324,
+          "total_cost_usd": 0.0296
+        }
+      }
+    },
+    "lrucache": {
+      "type": "bug-fix",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 52.4,
+          "avg_tokens": 55319,
+          "cached_frac": 0.7566,
+          "total_cost_usd": 0.2008
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 23.9,
+          "avg_tokens": 62707,
+          "cached_frac": 0.7665,
+          "total_cost_usd": 0.0549
+        }
+      }
+    },
+    "luhn": {
+      "type": "bug-fix",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 35.5,
+          "avg_tokens": 40051,
+          "cached_frac": 0.7692,
+          "total_cost_usd": 0.1406
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 26.1,
+          "avg_tokens": 64320,
+          "cached_frac": 0.769,
+          "total_cost_usd": 0.0531
+        }
+      }
+    },
+    "microapi": {
+      "type": "implement",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 2,
+          "solve_rate": 0.6667,
+          "mean_score": 0.9762,
+          "avg_secs": 100.5,
+          "avg_tokens": 90041,
+          "cached_frac": 0.7072,
+          "total_cost_usd": 0.3945
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 0,
+          "solve_rate": 0.0,
+          "mean_score": 0.6905,
+          "avg_secs": 98.6,
+          "avg_tokens": 141482,
+          "cached_frac": 0.6347,
+          "total_cost_usd": 0.1545
+        }
+      }
+    },
+    "middleware": {
+      "type": "feature-add",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 95.0,
+          "avg_tokens": 121727,
+          "cached_frac": 0.748,
+          "total_cost_usd": 0.4051
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 39.9,
+          "avg_tokens": 94623,
+          "cached_frac": 0.7326,
+          "total_cost_usd": 0.0808
+        }
+      }
+    },
+    "migrato": {
+      "type": "implement",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 2,
+          "solve_rate": 0.6667,
+          "mean_score": 0.8095,
+          "avg_secs": 69.5,
+          "avg_tokens": 52302,
+          "cached_frac": 0.566,
+          "total_cost_usd": 0.285
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 76.3,
+          "avg_tokens": 89916,
+          "cached_frac": 0.5852,
+          "total_cost_usd": 0.1118
+        }
+      }
+    },
+    "movavg": {
+      "type": "bug-fix",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 35.8,
+          "avg_tokens": 37827,
+          "cached_frac": 0.7667,
+          "total_cost_usd": 0.126
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 13.7,
+          "avg_tokens": 32790,
+          "cached_frac": 0.6708,
+          "total_cost_usd": 0.0324
+        }
+      }
+    },
+    "orderplane": {
+      "type": "implement",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 0,
+          "solve_rate": 0.0,
+          "mean_score": 0.6945,
+          "avg_secs": 413.8,
+          "avg_tokens": 627155,
+          "cached_frac": 0.8244,
+          "total_cost_usd": 1.9545
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 0,
+          "solve_rate": 0.0,
+          "mean_score": 0.5833,
+          "avg_secs": 140.2,
+          "avg_tokens": 577036,
+          "cached_frac": 0.774,
+          "total_cost_usd": 0.4068
+        }
+      }
+    },
+    "patchwise": {
+      "type": "implement",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 0,
+          "solve_rate": 0.0,
+          "mean_score": 0.6222,
+          "avg_secs": 131.6,
+          "avg_tokens": 78383,
+          "cached_frac": 0.5982,
+          "total_cost_usd": 0.3953
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 114.7,
+          "avg_tokens": 827182,
+          "cached_frac": 0.7951,
+          "total_cost_usd": 0.545
+        }
+      }
+    },
+    "pctstats": {
+      "type": "bug-fix",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 32.6,
+          "avg_tokens": 23363,
+          "cached_frac": 0.8352,
+          "total_cost_usd": 0.0751
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 16.4,
+          "avg_tokens": 40883,
+          "cached_frac": 0.7912,
+          "total_cost_usd": 0.033
+        }
+      }
+    },
+    "permgen": {
+      "type": "repair-to-green",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 19.9,
+          "avg_tokens": 21489,
+          "cached_frac": 0.5513,
+          "total_cost_usd": 0.0942
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 14.5,
+          "avg_tokens": 33060,
+          "cached_frac": 0.5956,
+          "total_cost_usd": 0.0298
+        }
+      }
+    },
+    "querygroup": {
+      "type": "feature-add",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 70.6,
+          "avg_tokens": 87734,
+          "cached_frac": 0.7715,
+          "total_cost_usd": 0.3139
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 25.6,
+          "avg_tokens": 46682,
+          "cached_frac": 0.6926,
+          "total_cost_usd": 0.0486
+        }
+      }
+    },
+    "repaircalc": {
+      "type": "repair-to-green",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 32.5,
+          "avg_tokens": 43592,
+          "cached_frac": 0.6796,
+          "total_cost_usd": 0.1605
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 13.8,
+          "avg_tokens": 38108,
+          "cached_frac": 0.4385,
+          "total_cost_usd": 0.0427
+        }
+      }
+    },
+    "repairmoney": {
+      "type": "repair-to-green",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 24.2,
+          "avg_tokens": 17243,
+          "cached_frac": 0.5324,
+          "total_cost_usd": 0.0794
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 13.0,
+          "avg_tokens": 31695,
+          "cached_frac": 0.6416,
+          "total_cost_usd": 0.0277
+        }
+      }
+    },
+    "repairpager": {
+      "type": "repair-to-green",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 16.5,
+          "avg_tokens": 18937,
+          "cached_frac": 0.5948,
+          "total_cost_usd": 0.0764
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 10.1,
+          "avg_tokens": 30508,
+          "cached_frac": 0.6818,
+          "total_cost_usd": 0.0246
+        }
+      }
+    },
+    "repairspans": {
+      "type": "repair-to-green",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 25.3,
+          "avg_tokens": 22870,
+          "cached_frac": 0.8366,
+          "total_cost_usd": 0.0679
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 13.9,
+          "avg_tokens": 46302,
+          "cached_frac": 0.7395,
+          "total_cost_usd": 0.0342
+        }
+      }
+    },
+    "romanio": {
+      "type": "repair-to-green",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 19.2,
+          "avg_tokens": 23758,
+          "cached_frac": 0.3585,
+          "total_cost_usd": 0.1246
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 14.1,
+          "avg_tokens": 39370,
+          "cached_frac": 0.6076,
+          "total_cost_usd": 0.0352
+        }
+      }
+    },
+    "routerwild": {
+      "type": "feature-add",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 51.3,
+          "avg_tokens": 45430,
+          "cached_frac": 0.7731,
+          "total_cost_usd": 0.1667
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 38.4,
+          "avg_tokens": 187305,
+          "cached_frac": 0.7332,
+          "total_cost_usd": 0.1503
+        }
+      }
+    },
+    "rrulelite": {
+      "type": "repair-to-green",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 25.9,
+          "avg_tokens": 28023,
+          "cached_frac": 0.6111,
+          "total_cost_usd": 0.1117
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 17.6,
+          "avg_tokens": 48766,
+          "cached_frac": 0.6132,
+          "total_cost_usd": 0.0416
+        }
+      }
+    },
+    "schemaoneof": {
+      "type": "feature-add",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 61.1,
+          "avg_tokens": 58834,
+          "cached_frac": 0.8206,
+          "total_cost_usd": 0.1937
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 18.7,
+          "avg_tokens": 71933,
+          "cached_frac": 0.7088,
+          "total_cost_usd": 0.0625
+        }
+      }
+    },
+    "searchprefix": {
+      "type": "feature-add",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 42.6,
+          "avg_tokens": 28480,
+          "cached_frac": 0.6778,
+          "total_cost_usd": 0.1244
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 36.5,
+          "avg_tokens": 100650,
+          "cached_frac": 0.7511,
+          "total_cost_usd": 0.0906
+        }
+      }
+    },
+    "semvercmp": {
+      "type": "bug-fix",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 44.3,
+          "avg_tokens": 37135,
+          "cached_frac": 0.6067,
+          "total_cost_usd": 0.1706
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 21.7,
+          "avg_tokens": 46605,
+          "cached_frac": 0.6629,
+          "total_cost_usd": 0.0462
+        }
+      }
+    },
+    "serialhook": {
+      "type": "feature-add",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 85.3,
+          "avg_tokens": 86200,
+          "cached_frac": 0.7102,
+          "total_cost_usd": 0.3244
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 53.5,
+          "avg_tokens": 138128,
+          "cached_frac": 0.7039,
+          "total_cost_usd": 0.1218
+        }
+      }
+    },
+    "slotfinder": {
+      "type": "implement",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 110.1,
+          "avg_tokens": 64232,
+          "cached_frac": 0.4928,
+          "total_cost_usd": 0.398
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 0,
+          "solve_rate": 0.0,
+          "mean_score": 0.8572,
+          "avg_secs": 38.9,
+          "avg_tokens": 53672,
+          "cached_frac": 0.3669,
+          "total_cost_usd": 0.0973
+        }
+      }
+    },
+    "statichisel": {
+      "type": "implement",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 141.3,
+          "avg_tokens": 70971,
+          "cached_frac": 0.5731,
+          "total_cost_usd": 0.4181
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 2,
+          "solve_rate": 0.6667,
+          "mean_score": 0.9259,
+          "avg_secs": 42.7,
+          "avg_tokens": 144635,
+          "cached_frac": 0.6825,
+          "total_cost_usd": 0.1423
+        }
+      }
+    },
+    "textflow": {
+      "type": "repair-to-green",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 28.6,
+          "avg_tokens": 29021,
+          "cached_frac": 0.6958,
+          "total_cost_usd": 0.1054
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 25.0,
+          "avg_tokens": 49607,
+          "cached_frac": 0.6023,
+          "total_cost_usd": 0.043
+        }
+      }
+    },
+    "textwidth": {
+      "type": "bug-fix",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 61.0,
+          "avg_tokens": 50756,
+          "cached_frac": 0.6757,
+          "total_cost_usd": 0.2165
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 72.2,
+          "avg_tokens": 218043,
+          "cached_frac": 0.7592,
+          "total_cost_usd": 0.1639
+        }
+      }
+    },
+    "ticketflow": {
+      "type": "implement",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 71.0,
+          "avg_tokens": 49467,
+          "cached_frac": 0.6534,
+          "total_cost_usd": 0.2393
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 1,
+          "solve_rate": 0.3333,
+          "mean_score": 0.3333,
+          "avg_secs": 27.4,
+          "avg_tokens": 50424,
+          "cached_frac": 0.525,
+          "total_cost_usd": 0.0731
+        }
+      }
+    },
+    "tierlimit": {
+      "type": "feature-add",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 60.8,
+          "avg_tokens": 48890,
+          "cached_frac": 0.661,
+          "total_cost_usd": 0.2135
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 29.3,
+          "avg_tokens": 56250,
+          "cached_frac": 0.723,
+          "total_cost_usd": 0.0533
+        }
+      }
+    },
+    "tmploop": {
+      "type": "feature-add",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 219.8,
+          "avg_tokens": 352307,
+          "cached_frac": 0.8433,
+          "total_cost_usd": 0.9729
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 206.6,
+          "avg_tokens": 1170968,
+          "cached_frac": 0.8408,
+          "total_cost_usd": 0.6959
+        }
+      }
+    },
+    "tokenbucket": {
+      "type": "bug-fix",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 69.2,
+          "avg_tokens": 64364,
+          "cached_frac": 0.6795,
+          "total_cost_usd": 0.2512
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 2,
+          "solve_rate": 0.6667,
+          "mean_score": 0.9792,
+          "avg_secs": 33.8,
+          "avg_tokens": 53839,
+          "cached_frac": 0.7322,
+          "total_cost_usd": 0.0485
+        }
+      }
+    },
+    "ttlcache": {
+      "type": "bug-fix",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 73.0,
+          "avg_tokens": 82297,
+          "cached_frac": 0.7896,
+          "total_cost_usd": 0.272
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 19.6,
+          "avg_tokens": 57773,
+          "cached_frac": 0.8162,
+          "total_cost_usd": 0.0437
+        }
+      }
+    },
+    "unitconv": {
+      "type": "repair-to-green",
+      "models": {
+        "glm-5.2": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 21.8,
+          "avg_tokens": 24378,
+          "cached_frac": 0.6535,
+          "total_cost_usd": 0.0924
+        },
+        "minimax-m3": {
+          "n": 3,
+          "solved": 3,
+          "solve_rate": 1.0,
+          "mean_score": 1.0,
+          "avg_secs": 18.9,
+          "avg_tokens": 41160,
+          "cached_frac": 0.6761,
+          "total_cost_usd": 0.0329
+        }
+      }
+    }
+  },
+  "observed": {
+    "auditlog": {
+      "glm-5.2": {
+        "n": 3,
+        "solved": 0,
+        "solve_rate": 0.0,
+        "mean_score": 0.0,
+        "avg_secs": 101.8,
+        "avg_tokens": 38842,
+        "cached_frac": 0.3457,
+        "total_cost_usd": 0.2773
+      },
+      "minimax-m3": {
+        "n": 3,
+        "solved": 0,
+        "solve_rate": 0.0,
+        "mean_score": 0.0,
+        "avg_secs": 57.2,
+        "avg_tokens": 91489,
+        "cached_frac": 0.4943,
+        "total_cost_usd": 0.1123
+      }
+    },
+    "cachelayer": {
+      "glm-5.2": {
+        "n": 3,
+        "solved": 0,
+        "solve_rate": 0.0,
+        "mean_score": 0.0,
+        "avg_secs": 117.8,
+        "avg_tokens": 118234,
+        "cached_frac": 0.5976,
+        "total_cost_usd": 0.5277
+      },
+      "minimax-m3": {
+        "n": 3,
+        "solved": 0,
+        "solve_rate": 0.0,
+        "mean_score": 0.0,
+        "avg_secs": 59.7,
+        "avg_tokens": 93760,
+        "cached_frac": 0.4764,
+        "total_cost_usd": 0.1183
+      }
+    },
+    "docsearch": {
+      "glm-5.2": {
+        "n": 3,
+        "solved": 0,
+        "solve_rate": 0.0,
+        "mean_score": 0.0,
+        "avg_secs": 125.8,
+        "avg_tokens": 102124,
+        "cached_frac": 0.5739,
+        "total_cost_usd": 0.4997
+      },
+      "minimax-m3": {
+        "n": 3,
+        "solved": 0,
+        "solve_rate": 0.0,
+        "mean_score": 0.0,
+        "avg_secs": 66.5,
+        "avg_tokens": 180961,
+        "cached_frac": 0.6182,
+        "total_cost_usd": 0.1761
+      }
+    },
+    "featureflags": {
+      "glm-5.2": {
+        "n": 3,
+        "solved": 0,
+        "solve_rate": 0.0,
+        "mean_score": 0.0,
+        "avg_secs": 102.0,
+        "avg_tokens": 57717,
+        "cached_frac": 0.4335,
+        "total_cost_usd": 0.3439
+      },
+      "minimax-m3": {
+        "n": 3,
+        "solved": 0,
+        "solve_rate": 0.0,
+        "mean_score": 0.0,
+        "avg_secs": 53.4,
+        "avg_tokens": 124305,
+        "cached_frac": 0.5889,
+        "total_cost_usd": 0.1376
+      }
+    },
+    "formvalidate": {
+      "glm-5.2": {
+        "n": 3,
+        "solved": 0,
+        "solve_rate": 0.0,
+        "mean_score": 0.0,
+        "avg_secs": 146.3,
+        "avg_tokens": 134671,
+        "cached_frac": 0.5564,
+        "total_cost_usd": 0.6471
+      },
+      "minimax-m3": {
+        "n": 3,
+        "solved": 0,
+        "solve_rate": 0.0,
+        "mean_score": 0.0,
+        "avg_secs": 96.7,
+        "avg_tokens": 294980,
+        "cached_frac": 0.6384,
+        "total_cost_usd": 0.2698
+      }
+    },
+    "jobflow": {
+      "glm-5.2": {
+        "n": 3,
+        "solved": 0,
+        "solve_rate": 0.0,
+        "mean_score": 0.0,
+        "avg_secs": 151.8,
+        "avg_tokens": 165844,
+        "cached_frac": 0.6273,
+        "total_cost_usd": 0.6927
+      },
+      "minimax-m3": {
+        "n": 3,
+        "solved": 0,
+        "solve_rate": 0.0,
+        "mean_score": 0.0,
+        "avg_secs": 53.9,
+        "avg_tokens": 73671,
+        "cached_frac": 0.4067,
+        "total_cost_usd": 0.1075
+      }
+    },
+    "mergeconf": {
+      "glm-5.2": {
+        "n": 3,
+        "solved": 0,
+        "solve_rate": 0.0,
+        "mean_score": 0.0,
+        "avg_secs": 105.8,
+        "avg_tokens": 69844,
+        "cached_frac": 0.5328,
+        "total_cost_usd": 0.368
+      },
+      "minimax-m3": {
+        "n": 3,
+        "solved": 0,
+        "solve_rate": 0.0,
+        "mean_score": 0.0,
+        "avg_secs": 55.1,
+        "avg_tokens": 133118,
+        "cached_frac": 0.6574,
+        "total_cost_usd": 0.1308
+      }
+    },
+    "notifyhub": {
+      "glm-5.2": {
+        "n": 3,
+        "solved": 0,
+        "solve_rate": 0.0,
+        "mean_score": 0.0,
+        "avg_secs": 132.5,
+        "avg_tokens": 65113,
+        "cached_frac": 0.4099,
+        "total_cost_usd": 0.4071
+      },
+      "minimax-m3": {
+        "n": 3,
+        "solved": 0,
+        "solve_rate": 0.0,
+        "mean_score": 0.0,
+        "avg_secs": 54.4,
+        "avg_tokens": 107123,
+        "cached_frac": 0.5049,
+        "total_cost_usd": 0.1311
+      }
+    },
+    "ratelimit": {
+      "glm-5.2": {
+        "n": 3,
+        "solved": 0,
+        "solve_rate": 0.0,
+        "mean_score": 0.0,
+        "avg_secs": 99.2,
+        "avg_tokens": 71039,
+        "cached_frac": 0.5786,
+        "total_cost_usd": 0.3554
+      },
+      "minimax-m3": {
+        "n": 3,
+        "solved": 0,
+        "solve_rate": 0.0,
+        "mean_score": 0.0,
+        "avg_secs": 56.1,
+        "avg_tokens": 114184,
+        "cached_frac": 0.6606,
+        "total_cost_usd": 0.1175
+      }
+    },
+    "retryflow": {
+      "glm-5.2": {
+        "n": 3,
+        "solved": 0,
+        "solve_rate": 0.0,
+        "mean_score": 0.0,
+        "avg_secs": 115.4,
+        "avg_tokens": 68844,
+        "cached_frac": 0.4584,
+        "total_cost_usd": 0.3953
+      },
+      "minimax-m3": {
+        "n": 3,
+        "solved": 0,
+        "solve_rate": 0.0,
+        "mean_score": 0.0,
+        "avg_secs": 64.7,
+        "avg_tokens": 144071,
+        "cached_frac": 0.6733,
+        "total_cost_usd": 0.1422
+      }
+    },
+    "scheduler": {
+      "glm-5.2": {
+        "n": 3,
+        "solved": 0,
+        "solve_rate": 0.0,
+        "mean_score": 0.0,
+        "avg_secs": 125.4,
+        "avg_tokens": 86485,
+        "cached_frac": 0.5741,
+        "total_cost_usd": 0.4277
+      },
+      "minimax-m3": {
+        "n": 3,
+        "solved": 0,
+        "solve_rate": 0.0,
+        "mean_score": 0.0,
+        "avg_secs": 35.4,
+        "avg_tokens": 52430,
+        "cached_frac": 0.3089,
+        "total_cost_usd": 0.083
+      }
+    },
+    "workflow": {
+      "glm-5.2": {
+        "n": 3,
+        "solved": 0,
+        "solve_rate": 0.0,
+        "mean_score": 0.0,
+        "avg_secs": 107.3,
+        "avg_tokens": 66101,
+        "cached_frac": 0.4697,
+        "total_cost_usd": 0.3725
+      },
+      "minimax-m3": {
+        "n": 3,
+        "solved": 0,
+        "solve_rate": 0.0,
+        "mean_score": 0.0,
+        "avg_secs": 55.9,
+        "avg_tokens": 123851,
+        "cached_frac": 0.5784,
+        "total_cost_usd": 0.1362
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+[package]
+name = "thinkbench-runner"
+version = "0.1.0"
+edition = "2021"
+description = "Standalone benchmark runner: drives any OpenAI-compatible model through an autonomous coding-agent loop against thinkbench tasks, grades, and writes results."
+license = "Apache-2.0"
+
+[[bin]]
+name = "runner"
+path = "src/main.rs"
+
+[dependencies]
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "process", "time", "fs", "sync"] }
+reqwest = { version = "0.12", features = ["json", "stream"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"
